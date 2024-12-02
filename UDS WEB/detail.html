@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Detail</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="service-detail"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const serviceInfo = JSON.parse(decodeURIComponent(params.get('service')));
+
+            const detailHtml = `
+                <h1>${serviceInfo.title}</h1>
+                <p>${serviceInfo.description}</p>
+                <h2>Benefits:</h2>
+                <ul>
+                    ${serviceInfo.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                </ul>
+            `;
+
+            document.getElementById('service-detail').innerHTML = detailHtml;
+        });
+    </script>
+</body>
+</html>

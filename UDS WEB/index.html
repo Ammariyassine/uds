@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Digital Shift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Agency Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#about-why-us"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fade-overlay"></div>
+
+    <section id="home" class="parallax">
+        <div class="home-background">
+            <div class="content">
+                <div class="text-background">
+                    <h1 class="animate-text glow-text">Welcome to Our Unique Digital Shift</h1>
+                    <p class="animate-text glow-text">Our goal is to be a trusted partner in your digital journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="imgs/background.jpg" alt="Background Image" class="background-image">
+    <section id="services">
+        <h2 class="animate-text">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item" data-service-id="social-media-management">
+                <i class="fas fa-share-alt"></i>
+                <h3>Social Media Management</h3>
+                <p>Overseeing profiles, developing content to interact with followers &amp; boost traffic</p>
+            </div>
+            <div class="service-item" data-service-id="digital-advertising">
+                <i class="fas fa-ad"></i>
+                <h3>Digital Advertising</h3>
+                <p>Strategizing &amp; implementing campaigns across Google Ads &amp; Social Media</p>
+            </div>
+            <div class="service-item" data-service-id="analytics-and-reporting">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics and Reporting</h3>
+                <p>Monitoring &amp; evaluating website data to assess performance &amp; make data-driven decisions</p>
+            </div>
+            <div class="service-item" data-service-id="website-design-and-development">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Website Design and Development</h3>
+                <p>Creating responsive, user-friendly websites optimized for search engines</p>
+            </div>
+            <div class="service-item" data-service-id="video-marketing">
+                <i class="fas fa-video"></i>
+                <h3>Video Marketing</h3>
+                <p>Producing and marketing videos to showcase products/services &amp; enhance brand awareness</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-why-us">
+        <div class="card-container">
+            <div class="card about-card">
+                <h2 class="animate-text">About Us</h2>
+                <p class="animate-text">We are a dynamic digital marketing agency dedicated to helping businesses grow their online presence.</p>
+            </div>
+            <div class="card why-us-card">
+                <h2 class="animate-text">Why Us</h2>
+                <p class="animate-text">We are a team of experienced professionals who leverage the latest tools &amp; trends to deliver measurable results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="animate-text">Contact Us</h2>
+        <form action="php/index.php" method="POST" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Unique Digital Shift. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
